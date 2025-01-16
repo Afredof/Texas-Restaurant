@@ -1,0 +1,79 @@
+{
+  "hash": "8aedc377",
+  "configHash": "69a38ff8",
+  "lockfileHash": "cbd5b4c1",
+  "browserHash": "e2e8da83",
+  "optimized": {
+    "react": {
+      "src": "../../react/index.js",
+      "file": "react.js",
+      "fileHash": "1f07a62e",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "eb226a2a",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "fe5817d1",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "9e22ef63",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "5da58f86",
+      "needsInterop": true
+    },
+    "react-icons/fa": {
+      "src": "../../react-icons/fa/index.mjs",
+      "file": "react-icons_fa.js",
+      "fileHash": "91ad1ed9",
+      "needsInterop": false
+    },
+    "react-icons/fa6": {
+      "src": "../../react-icons/fa6/index.mjs",
+      "file": "react-icons_fa6.js",
+      "fileHash": "89f9d0c1",
+      "needsInterop": false
+    },
+    "react-lottie": {
+      "src": "../../react-lottie/dist/index.js",
+      "file": "react-lottie.js",
+      "fileHash": "056c689d",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "2a2cb1a3",
+      "needsInterop": false
+    },
+    "react-toastify": {
+      "src": "../../react-toastify/dist/react-toastify.esm.mjs",
+      "file": "react-toastify.js",
+      "fileHash": "fae4faeb",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-MVRAC76T": {
+      "file": "chunk-MVRAC76T.js"
+    },
+    "chunk-W6GNS5VE": {
+      "file": "chunk-W6GNS5VE.js"
+    },
+    "chunk-ILK4XV7T": {
+      "file": "chunk-ILK4XV7T.js"
+    }
+  }
+}

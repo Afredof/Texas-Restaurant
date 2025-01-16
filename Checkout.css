@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.checkout-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensures positioning context for animation */
+}
+
+/* Section Headings */
+.checkout-page h2 {
+  font-size: 1.5rem;
+  color: #ff0000;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ff0000;
+  padding-bottom: 0.5rem;
+}
+
+/* Order Summary */
+.checkout-page ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.checkout-page ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.checkout-page p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #555;
+}
+
+/* Customer Information Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+/* Submit Button */
+button {
+  align-items: center;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.75rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #d44418;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Animation Container */
+.order-success {
+  position: absolute; /* Position the animation absolutely within checkout-page */
+  top: 50%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to exactly center */
+  width: 100%; /* Ensure animation doesn't overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .checkout-page {
+    padding: 1rem;
+  }
+
+  .checkout-page h2 {
+    font-size: 1.3rem;
+  }
+
+  form input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .checkout-page p {
+    font-size: 1rem;
+  }
+}

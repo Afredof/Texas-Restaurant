@@ -1,0 +1,89 @@
+
+/* General Menu Grid Styles */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between items */
+    justify-content: center; /* Center items */
+    margin: 2rem;
+  }
+  /* heafding */
+  .heading{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000000;
+    
+  }
+  
+  /* Food Card Styles */
+  .food-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width: 250px; /* Default width */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .food-card:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+  }
+  
+  .food-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .food-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .food-card p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .food-card button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .food-card button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    /* For tablets and small screens */
+    .menu-grid {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+    }
+  
+    .food-card {
+      width: 90%; /* Make food cards wider on small screens */
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* For mobile phones */
+    .menu-grid {
+      gap: 0.5rem; /* Reduce spacing between items */
+    }
+  
+    .food-card {
+      width: 100%; /* Full-width cards on very small screens */
+      margin-bottom: 1rem;
+    }
+  }
+  
